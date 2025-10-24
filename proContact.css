@@ -1,0 +1,174 @@
+body, html {
+  background-color: #F7F7F7;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === Header === */
+.textColor {
+  color: #000000;
+}
+
+.nav-link {
+  color: #854836 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+  color: #FFB22C !important;
+  background-color: rgba(133,72,54,0.1);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background-color: #FFB22C !important;
+  color: #fff !important;
+}
+
+/* 🌤️ Estilo profesional y tranquilo del formulario de contacto DS-Technology */
+
+/* Contenedor general */
+.contact-section form {
+  background-color: #ffffff; /* card blanca */
+  border: none;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* sombra suave */
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-section form:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Título del formulario */
+.contact-section h2 {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Descripción */
+.contact-section p {
+  color: #333;
+}
+
+/* Labels */
+.contact-section .form-label {
+  color: #000;
+  font-weight: 500;
+}
+
+/* Inputs y selects */
+.contact-section .form-control,
+.contact-section .form-select {
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section .form-control:focus,
+.contact-section .form-select:focus {
+  border-color: #ffcc00; /* toque amarillo DS */
+  box-shadow: 0 0 6px rgba(255, 204, 0, 0.3);
+}
+
+/* Textarea */
+.contact-section textarea {
+  resize: none;
+}
+
+/* Checkboxes y radios */
+.contact-section .form-check-input:checked {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+}
+
+/* Personalización del switch DS-Tech */
+.contact-section .form-switch .form-check-input:checked {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+}
+
+/* Botones */
+.contact-section button[type="submit"] {
+  background-color: #ffcc00;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-section button[type="submit"]:hover {
+  background-color: #ffd633;
+  transform: translateY(-2px);
+}
+
+.contact-section button[type="reset"] {
+  border: 1.5px solid #ffcc00;
+  color: #000;
+  font-weight: 500;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.contact-section button[type="reset"]:hover {
+  background-color: #fff9e6;
+}
+
+/* Feedback de validación */
+.contact-section .valid-feedback {
+  color: #198754; /* verde Bootstrap */
+}
+
+.contact-section .invalid-feedback {
+  color: #dc3545; /* rojo Bootstrap */
+}
+
+/* Placeholders */
+.contact-section ::placeholder {
+  color: #777;
+  opacity: 0.8;
+}
+
+/* Animación ligera de foco */
+.contact-section input:focus,
+.contact-section textarea:focus {
+  transform: scale(1.01);
+}
+
+/* Margen entre los campos */
+.contact-section .mb-3,
+.contact-section .mb-4 {
+  margin-bottom: 1.2rem !important;
+}
+
+
+/* === Footer === */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-top: 3px solid #FFB22C;
+}
+
+.footer h5 {
+  color: #FFB22C;
+  letter-spacing: 1px;
+}
+
+.footer .social-icons a {
+  color: #FFB22C;
+  font-size: 1.3rem;
+  margin: 0 8px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #FFD86A;
+  transform: translateY(-3px);
+}
+
+/* === Asegurar footer al fondo === */
+footer.footer {
+  margin-top: auto;
+}

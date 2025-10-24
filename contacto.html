@@ -22,6 +22,8 @@
                 <li class="nav-item"><a href="servicio.html" class="nav-link">Servicio</a></li>
                 <li class="nav-item"><a href="portafolio.html" class="nav-link">Portafolio</a></li>
                 <li class="nav-item"><a href="contacto.html" class="nav-link active" aria-current="page">Contacto</a>
+                <li class="nav-item"><a href="proContact.html" class="nav-link">Contacto Profesional</a></li>
+
                 </li>
             </ul>
         </div>
@@ -36,18 +38,24 @@
 
         <div class="row g-4">
             <div class="col-md-7">
-                <form>
+                <form class="needs-validation" novalidate>
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" id="nombre" class="form-control" required>
+                        <div class="valid-feedback">Nombre registrado.</div>
+                        <div class="invalid-feedback">Ingresa un nombre válido.</div>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo electrónico</label>
                         <input type="email" id="email" class="form-control" required>
+                        <div class="valid-feedback">E-mail registrado.</div>
+                        <div class="invalid-feedback">Ingrese un E-mail vállido.</div>
                     </div>
                     <div class="mb-3">
                         <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea id="mensaje" class="form-control" rows="5"></textarea>
+                        <textarea id="mensaje" class="form-control" required rows="5"></textarea>
+                        <div class="valid-feedback">Mensaje registrado.</div>
+                        <div class="invalid-feedback">Ingrese un mensaje / asunto por favor.</div>
                     </div>
                     <button type="submit">Enviar</button>
                 </form>
@@ -83,6 +91,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 </body>
 
 </html>
