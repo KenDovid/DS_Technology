@@ -1,0 +1,93 @@
+/* === Base === */
+body, html {
+  background-color: #F7F7F7;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === Header === */
+.textColor {
+  color: #000000;
+}
+
+.nav-link {
+  color: #854836 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+  color: #FFB22C !important;
+  background-color: rgba(133,72,54,0.1);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background-color: #FFB22C !important;
+  color: #fff !important;
+}
+
+
+/* Sección */
+
+.about-section {
+  color: #333;
+}
+
+.text-accent {
+  color: #FFB22C !important;
+}
+
+.team-card {
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(255, 178, 44, 0.25);
+  border-color: rgba(255, 178, 44, 0.4);
+}
+
+.team-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FFB22C;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-img {
+  transform: scale(1.07);
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-top: 3px solid #FFB22C;
+}
+
+.footer h5 {
+  color: #FFB22C;
+  letter-spacing: 1px;
+}
+
+.footer .social-icons a {
+  color: #FFB22C;
+  font-size: 1.3rem;
+  margin: 0 8px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #FFD86A;
+  transform: translateY(-3px);
+}

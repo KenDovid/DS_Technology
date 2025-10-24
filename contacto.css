@@ -1,0 +1,126 @@
+body, html {
+  background-color: #F7F7F7;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === Header === */
+.textColor {
+  color: #000000;
+}
+
+.nav-link {
+  color: #854836 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+  color: #FFB22C !important;
+  background-color: rgba(133,72,54,0.1);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background-color: #FFB22C !important;
+  color: #fff !important;
+}
+
+/* === Sección de contacto === */
+.contact-section {
+  flex: 1; /* para que empuje el footer al fondo */
+  padding: 4rem 0;
+}
+
+.contact-section h2 {
+  color: #000;
+  font-weight: 700;
+}
+
+.contact-section p {
+  color: #555;
+}
+
+.contact-section form .form-control {
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.contact-section form .form-control:focus {
+  border-color: #FFB22C;
+  box-shadow: 0 0 0 0.2rem rgba(255,178,44,0.25);
+}
+
+/* === Botón === */
+.contact-section button {
+  background-color: #FFB22C;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+}
+
+.contact-section button:hover {
+  background-color: #e09b21;
+  transform: translateY(-2px);
+}
+
+/* === Bloque de información === */
+.contact-section .row {
+  align-items: stretch; /* Ambas columnas con misma altura */
+}
+
+.contact-info {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Llena todo el alto del row */
+}
+
+.contact-info h4 {
+  color: #FFB22C;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  color: #444;
+  margin-bottom: 0.6rem;
+}
+
+/* === Footer === */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-top: 3px solid #FFB22C;
+}
+
+.footer h5 {
+  color: #FFB22C;
+  letter-spacing: 1px;
+}
+
+.footer .social-icons a {
+  color: #FFB22C;
+  font-size: 1.3rem;
+  margin: 0 8px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #FFD86A;
+  transform: translateY(-3px);
+}
+
+/* === Asegurar footer al fondo === */
+footer.footer {
+  margin-top: auto;
+}
